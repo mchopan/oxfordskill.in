@@ -12,6 +12,16 @@
     body {
       background-color: #292b2c;
     }
+    .gallery > img{
+      filter: grayscale(1);
+    }
+    .gallery > img:hover{
+      filter: grayscale(0);
+      
+    }
+   nav a:hover{
+      text-decoration-style:solid orange;
+    }
   </style>
   <script src="https://kit.fontawesome.com/1301c5349c.js" crossorigin="anonymous"></script>
   <title>Oxford Skill Institute</title>
@@ -24,17 +34,17 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container text-white bg-dark">
+    <div class="container bg-dark">
       <a class="navbar-brand" href="index.html"><img src="OXFORD LOGO.png" alt="oxford" height="50" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
+      <div class="collapse navbar-collapse " id="navbarNav" >
         <ul class="navbar-nav ms-lg-auto">
-          <li class=" text-white fs-5 nav-item dropdown">
+          <li class="fs-5 nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">COURSES</a>
+              aria-expanded="false" style="color: orange;">COURSES</a>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="cutting_tailoring.html">CUTTING AND TAILORING</a>
@@ -46,10 +56,13 @@
           </li>
 
           <li class="nav-item fs-5">
-            <a class="nav-link" href="mission_vision.html">MISSION AND VISION</a>
+            <a class="nav-link" href="mission_vision.html" style="color: orange;">MISSION AND VISION</a>
           </li>
           <li class="nav-item fs-5">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+            <a class="nav-link" href="gallery.html" style="color: orange;">GALLERY</a>
+          </li>
+          <li class="nav-item fs-5">
+            <a class="nav-link" href="form.html" style="color: orange;">REGISTRATION</a>
           </li>
         </ul>
       </div>
@@ -71,6 +84,9 @@
       <div class="carousel-item">
         <img src="How-to-Learn-Computer-Programming-Languages.png" class="d-block w-100" alt="..." />
       </div>
+      <div class="carousel-item">
+        <img src="tailoring_equiments.jpg" class="d-block w-100" alt="..." />
+      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,22 +97,31 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+    <!--Latest Updates-->
+    <div class="container">
+      <div class="col-12" style="color:orange; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <h1 class="text-center">Latest Updates</h1>
+          <ol class="pb-4" style="color:cyan; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              <li><p>Admission Open For Tailoring.</p><p>For More Info Contact Us</p></li>
+            
+          </ol>
+      </div>
+  </div>
   <!--Chairman desk-->
 
   <div class="container">
     <div class="row">
 
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <h2 class="mt-lg-4 mt-md-5 text-center text-white">FROM THE CHAIRMAN'S DESK</h2>
+        <h2 class="mt-lg-4 mt-md-5 text-center" style="color:orange; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FROM THE CHAIRMAN'S DESK</h2>
       </div>
       <div class="col-5">
 
       </div>
-      <div class="col-lg-2 col-md-4 col-sm-4">
-        <img src="cards/Mudasir.jpeg" class="rounded mx-auto d-block img-fluid img-thumbnail" alt="...">
+      <div class="col-lg-2 col-md-5 col-sm-5">
+        <img src="cards/Ceo.jpeg" class="rounded-circle mx-auto d-block img-fluid img-thumbnail" alt="...">
         <div class="card-body">
-          <p class="card-text text-white text-center fs-6">CEO OF OSCI MUDASIR AHMAD CHOPAN</p>
+          <p class="card-text text-center fs-6" style="color:cyan; font-weight: 900; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">CEO OF OSCI MUDASIR AHMAD CHOPAN</p>
         </div>
       </div>
 
@@ -124,8 +149,9 @@
   </div>
 
   <!--Gallery-->
-  <div class="container">
-    <h1 class="display-3 text-center text-white my-4 ">GALLERY</h1>
+  <br>
+  <div class="container gallery">
+    <h1 class="display-3 text-center my-4 "style="color:orange; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >GALLERY</h1>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-4 mt-2">
         <div class="card">
@@ -173,22 +199,31 @@
     <div class="container">
       <div class="row my-4">
         <div class="col-lg-8 col-md-8 col-sm-12 mt-lg-5">
-          <div class="text-white text-center col-md-12 col-sm-12 col-lg-12">
-            <p><strong>NEWSLATTER</strong></p>
-            <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris
-            </p>
-          </div>
-
-          <div class="text-white text-center mt-lg-5 pt-lg-5 mt-md-5 pt-md-5">
-            <p><strong>Stay upto date</strong></p>
-            <div class="input-group mb-2">
-              <input type="text" class="form-control" placeholder="Email Address" aria-label="Email-Address"
-                aria-describedby="button-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="button-addon2">NOTIFY ME</button>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <h1 class="text-center" style="color: orange;">Affiliated With</h1>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="afflation/nsdc-logo-ss.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="afflation/logo2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="afflation/logo3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +239,8 @@
           <h4 class="text-center">EMAIL</h4>
           <p class="text-center">oxfordjk101@gmail.com</p>
           <p class="text-center mb-2 pt-3 pb-4 fs-5"><a href="https://www.instagram.com/oxfordofficial777/"><i
-                class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/OXFORDJK/"><i class="fab fa-facebook"></i></a>
+                class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/OXFORDJK/"><i
+                class="fab fa-facebook"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a> <a
               href="https://www.youtube.com/user/Raja604010"><i class="fab fa-youtube"></i></a>
           </p>

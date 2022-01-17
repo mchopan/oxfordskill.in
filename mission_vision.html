@@ -12,9 +12,19 @@
     body {
       background-color: #292b2c;
     }
+    .gallery > img{
+      filter: grayscale(1);
+    }
+    .gallery > img:hover{
+      filter: grayscale(0);
+      
+    }
+   nav a:hover{
+      text-decoration-style:solid orange;
+    }
   </style>
   <script src="https://kit.fontawesome.com/1301c5349c.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Oxford Skill Institute</title>
 </head>
 
 <body>
@@ -24,37 +34,41 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container text-white bg-dark">
+    <div class="container bg-dark">
       <a class="navbar-brand" href="index.html"><img src="OXFORD LOGO.png" alt="oxford" height="50" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
+      <div class="collapse navbar-collapse " id="navbarNav" >
         <ul class="navbar-nav ms-lg-auto">
-          <li class=" text-white fs-5 nav-item dropdown">
+          <li class="fs-5 nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">COURSES</a>
+              aria-expanded="false" style="color: orange;">COURSES</a>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="cutting_tailoring.html">CUTTING AND TAILORING</a>
               </li>
-              <li><a class="dropdown-item" href="#">COMPUTER DIPLOMA</a></li>
+              <li><a class="dropdown-item" href="computer_cources.html">COMPUTER DIPLOMA</a></li>
               <li><a class="dropdown-item disabled" href="#">WEB DEVELOPMENT</a></li>
               <li><a class="dropdown-item disabled" href="#">MEDICAL COURSE</a></li>
             </ul>
           </li>
 
           <li class="nav-item fs-5">
-            <a class="nav-link" href="mission_vision.html">MISSION AND VISION</a>
+            <a class="nav-link" href="mission_vision.html" style="color: orange;">MISSION AND VISION</a>
           </li>
           <li class="nav-item fs-5">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+            <a class="nav-link" href="gallery.html" style="color: orange;">GALLERY</a>
+          </li>
+          <li class="nav-item fs-5">
+            <a class="nav-link" href="form.html" style="color: orange;">REGISTRATION</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <!--Mission And Vision-->
 
 
